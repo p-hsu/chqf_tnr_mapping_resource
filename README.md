@@ -1,14 +1,21 @@
-# CHQF_TNR_MAP
-
 # CHQF TNR MAP  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
-
+1. [Project Overview](#Project-Overview)
+2. [Deployement](#Deployement)
+3. [Application Screenshots](#Application-Screenshots)
+4. [Project-build Aspects](#Project-build-Aspects)
+5. [Installation](#Installation)
+6. [Usage](#Usage)
+7. [License](#License)
+8. [Credit](#Credit)
 ****
 
 ## Project overview
 
 Carol House Quick Fix Pet Clinic (Saint Louis, MO) TNR (trap-neuter-release) map of colonies and related resources for internal usage and visual aid. Focused on a mobile-first design for ease of use while out around the city.
+
+***This project is also an exploration into using Next.js with Tailwind and MongoDB.***
 
 ### Project Status:
 
@@ -20,13 +27,15 @@ Carol House Quick Fix Pet Clinic (Saint Louis, MO) TNR (trap-neuter-release) map
 ****
 
 ## Deployment
+*TBD*
 
 ## Application Screenshots
+*TBD*
 
 ****
 
 
-### Project-build Aspects:
+## Project-build Aspects:
 
 The following components are used to build the code for this project:
 
@@ -47,7 +56,7 @@ The following lists all functions within this project:
 * user can search by client or colony information [?]
 
 ### Process:
-
+*ONGOING*
 
 ****
 
@@ -60,6 +69,7 @@ The following lists all functions within this project:
 ![Directory Structure:](./assets/images/dir-struc.png)
 
 ## Usage
+*TBD*
 
 ****
 
@@ -68,3 +78,4 @@ The following lists all functions within this project:
 This application is licensed under MIT, please see the corresponding file in the repo directory.
 
 ## Credit
+*TBD*
