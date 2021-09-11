@@ -1,17 +1,22 @@
-import Head from 'next/head'
-import clientPromise from '../lib/mongodb'
+import Head from 'next/head';
+import clientPromise from '../lib/mongodb';
+import Map from '../components/Map';
+import Info from '../components/Info';
 
 export default function Home({ isConnected }) {
   return (
-    <div>
-      <Head>
-        <title>CHQF TNR MAP</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+        <Head>
+          <title>CHQF TNR MAP</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+      <div className="box-border w-screen object-contain border-2 border-yellow-800 relative flex flex-grow grid grid-rows-2 gap-2">
 
-      <h1>CHQF TNR MAP</h1>
+        <Map />
+        <Info />
 
-    </div>
+      </div>
+    </>
   )
 }
 
