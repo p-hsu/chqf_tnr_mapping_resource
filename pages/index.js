@@ -10,7 +10,7 @@ export default function Home({ isConnected }) {
           <title>CHQF TNR MAP</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-      <div className="box-border w-screen object-contain border-2 border-yellow-800 relative flex flex-grow grid grid-rows-2 gap-2">
+      <div className="box-border w-screen object-contain relative flex flex-grow grid grid-rows-2 gap-2">
 
         <Map />
         <Info />
