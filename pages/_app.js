@@ -1,11 +1,11 @@
 import 'tailwindcss/tailwind.css'
 import Layout from '../components/Layout'
 
+// initializes components all wrapped in layout
 function MyApp({ Component, pageProps }) {
   return (
   <Layout>
-        <Component {...pageProps} />
-
+     <Component {...pageProps} />
   </Layout>
 
   )
