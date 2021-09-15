@@ -2,7 +2,7 @@ import React from 'react';
 
 const Colony = () => {
     return (
-        <div className="h-auto m-1 px-2 border-2 rounded-md border-gray-700 bg-blue-300 bg-opacity-25 flex-auto text-base">
+        <div className="h-auto m-1 px-2 border-2 rounded-md border-gray-700 bg-blue-200 bg-opacity-25 flex-auto text-base">
             <h1 className="text-lg">Colony name</h1>
             <h3 >Status:<span className="bg-yellow-200"> Pending</span>/<span className="bg-green-300">Ongoing</span>/<span className="bg-pink-300">Completed</span></h3>
             <div className="p-2 grid auto-cols-max grid-cols-2">

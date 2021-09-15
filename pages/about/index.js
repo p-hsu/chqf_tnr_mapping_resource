@@ -1,8 +1,7 @@
 export default function About() {
   return (
-    <div className="box-border w-screen p-3 relative text-sm leading-normal flex flex-col flex-grow">
-      {/* <h1 className="text-lg my-2 text-center">About</h1> */}
-      <div className=" p-2 m-auto border-2 border-gray-700 border-opacity-50 rounded-md">
+    <div className="box-border w-screen p-3 relative text-sm leading-normal flex flex-grow">
+      <div className=" p-2 m-auto border-2 border-gray-700 border-opacity-50 rounded-md bg-blue-200 bg-opacity-25 shadow-lg">
       <p>
         This application serves as an internal tool for
         <a target="_blank" href="https://stlspayneuter.org/" className="border-b-2 border-pink-400 border-opacity-25 text-pink-500 font-medium"> Carol House Quick Fix </a>
