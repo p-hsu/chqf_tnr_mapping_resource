@@ -16,10 +16,12 @@ export default function About() {
       <p>
         Although simple, this tool is a visual representation that allows ease of access to the bigger picture. At
         a glance, the user will be able to see the pins of all colonies, any associated personnel, and any resources
-        provided by CHQF. This visual can be cross-referenced with our outreach clients and help make important
-        connections within the network of our pet-owning, animal caring community. Just as well, this makes for a
-        great presentation to potential donors or other interested parties.
+        provided by CHQF.
       </p>
+      <br></br>
+      <p> This map can also be cross-referenced with outreach data and help with making important
+        connections within the network of our pet-owning, animal caring community. Just as well, this makes for a
+        great presentation to potential donors or other interested parties.</p>
       </div>
     </div>
   )
