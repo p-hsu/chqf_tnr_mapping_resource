@@ -1,8 +1,14 @@
 import React from 'react';
+import Button from '../components/Button';
 
 const Form = () => {
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+    }
+
     return (
-        <form className="p-2 m-auto w-full border-2 border-gray-700 border-opacity-50 rounded-md bg-gradient-to-b from-gray-700 via-gray-500 to-gray-700 shadow-lg">
+        <form className="form" onSubmit="handleSubmit">
                 <div className="text-xs text-gray-200">
                     <p>* required fields</p>
                 </div>
@@ -25,10 +31,10 @@ const Form = () => {
                     <input type="text" placeholder="Email" className="form-input"/>
                 </div>
                 <div className="form-div">
-                    <label className="mt-1 ml-1 uppercase text-gray-200 text-xs font-semibold">Status</label>
+                    <label className="mt-1 ml-1 uppercase text-gray-200 text-xs font-semibold" for="status">Status</label>
                 </div>
                 <div className="form-div">
-                    <select className="form-input bg-white">
+                    <select className="form-input bg-white" id="status">
                         <option>--</option>
                         <option>Feeder</option>
                         <option>Trapper</option>
@@ -36,6 +42,7 @@ const Form = () => {
                         <option>Organization</option>
                     </select>
                 </div>
+                <Button />
         </form>
     )
 }
