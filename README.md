@@ -14,11 +14,6 @@
 ## Project overview
 
 Carol House Quick Fix Pet Clinic (Saint Louis, MO) TNR (trap-neuter-release) map of colonies and related resources for internal usage and visual aid. Focused on a mobile-first design for ease of use while out around the city.
-<<<<<<< HEAD
-=======
-
-***This project is also an exploration into using Next.js with Tailwind and MongoDB.***
->>>>>>> main
 
 ### Project Status:
 
@@ -59,11 +54,6 @@ The following lists all functions within this project:
 * user can search by client or colony information [?]
 
 ### Process:
-<<<<<<< HEAD
-
-=======
-*ONGOING*
->>>>>>> main
 
 ****
 
