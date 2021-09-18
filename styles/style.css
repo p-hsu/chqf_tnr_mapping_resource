@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .form {
+        @apply p-2 m-auto w-full border-2 border-gray-700 border-opacity-50 rounded-md bg-gradient-to-b from-gray-700 via-gray-500 to-gray-700 shadow-lg
+    }
+    .form-div {
+       @apply my-3 mx-2 flex text-gray-600
+    }
+    .form-input {
+        @apply p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow
+    }
+};
+@tailwind utilities;
