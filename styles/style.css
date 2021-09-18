@@ -3,10 +3,10 @@
 
 @layer components {
     .form-div {
-       @apply m-2 flex text-gray-600
+       @apply my-3 mx-2 flex text-gray-600
     }
     .form-input {
-        @apply p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-25 flex-grow
+        @apply p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow
     }
 };
 @tailwind utilities;
