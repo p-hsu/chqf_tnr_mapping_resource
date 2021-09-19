@@ -22,7 +22,7 @@ export default function Home({ clients }) {
         </Head>
       <div className="box-border w-screen object-contain relative flex flex-grow grid grid-rows-2 gap-2">
         <Map />
-        <Info />
+        <Info clients={clients} />
 
       </div>
     </>
