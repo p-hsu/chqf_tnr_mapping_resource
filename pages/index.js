@@ -4,9 +4,10 @@ import clientPromise from '../lib/mongodb';
 import Map from '../components/Map';
 import Info from '../components/Info';
 
-export default function Home({ clients }) {
+export default function Home({ colony }) {
 
-  console.log({clients})
+  // console.log({clients})
+  console.log({colony})
 
   const Map = dynamic(() => import("../components/Map"), {
     loading: () => "Loading...",
@@ -22,7 +23,7 @@ export default function Home({ clients }) {
         </Head>
       <div className="box-border w-screen object-contain relative flex flex-grow grid grid-rows-2 gap-2">
         <Map />
-        <Info clients={clients} />
+        <Info colony={colony}/>
 
       </div>
     </>
@@ -44,21 +45,34 @@ export async function getServerSideProps(context) {
   // const { db } = await clientPromise
 
   // setting variable data as collection
-  const data = await db.collection("client").find().toArray();
+  // const clientData = await db.collection("client").find().toArray();
 
   // mapping over bson to json
-  const clients = data.map(client => {
+  // const clients = clientData.map(client => {
+  //   return{
+  //     firstName: client.firstName,
+  //     lastName: client.lastName,
+  //     email: client.email,
+  //     address: client.address,
+  //     status: client.clientType
+  //   }
+  // })
+
+  const colonyData = await db.collection("colony").find().toArray();
+
+  const colony = colonyData.map(colony => {
     return{
-      firstName: client.firstName,
-      lastName: client.lastName,
-      email: client.email,
-      address: client.address,
-      status: client.clientType
+      name: colony.name,
+      address: colony.address,
+      status: colony.status.code,
+      total: colony.status.total,
+      fixed: colony.status.fixed,
+      rescue: colony.status.to_rescue
     }
   })
 
 
   return {
-    props: { clients },
+    props: { colony },
   }
 }

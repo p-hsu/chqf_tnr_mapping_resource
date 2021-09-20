@@ -5,12 +5,15 @@ import Colony from './Colony';
 const Info = (props) => {
     return (
         <div className="flex flex-1 grid grid-row-2 gap-1">
-            {props.clients.map((clients) => {
+            {/* {props.clients.map((clients) => {
                 return <Client clients={clients} />
                 }
-            )}
+            )} */}
 
-            <Colony />
+            {props.colony.map((colony) => {
+                return <Colony colony={colony} />
+                }
+            )}
 
         </div>
     )
