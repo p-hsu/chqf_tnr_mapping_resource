@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactMapGl, {Popup, NavigationControl, GeolocateControl} from 'react-map-gl';
-import Nav from './Nav';
+import Pin from './Pin';
 
-const Map = () => {
+const Map = (props) => {
 
     const [viewport, setViewPort] = React.useState({
         width:"100vw",
@@ -47,6 +47,10 @@ const Map = () => {
                 {...viewport}
                 {...settings}
             >
+                {props.colony.map((colony, index) => {
+                    return <Pin colony={colony} key={index}/>
+                    }
+                )}
                 <GeolocateControl style={geoLocateStyle} />
                 <NavigationControl style={navStyle} />
 
