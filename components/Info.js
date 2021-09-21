@@ -10,8 +10,8 @@ const Info = (props) => {
                 }
             )} */}
 
-            {props.colony.map((colony) => {
-                return <Colony colony={colony} />
+            {props.colony.map((colony, index) => {
+                return <Colony colony={colony} key={index}/>
                 }
             )}
 
