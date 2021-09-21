@@ -8,6 +8,7 @@ const Colony = ({colony}) => {
             <div className="p-2 grid auto-cols-max grid-cols-2">
                 <p>{colony.fixed} / {colony.total} fixed</p>
                 <p>{colony.rescue} / {colony.total} to rescues</p>
+                <p>{colony.coordinates[0]}, {colony.coordinates[1]}</p>
                 <p className="grid auto-row-max grid-row-2"> Resources
                     <p className="mt-1 text-xs">food:</p>
                     <p className="mt-1 text-xs">houses:</p>
