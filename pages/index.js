@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import clientPromise from '../lib/mongodb';
 import Map from '../components/Map';
 import Info from '../components/Info';
@@ -9,10 +9,10 @@ export default function Home({ colony }) {
   // console.log({clients})
   console.log({colony})
 
-  const Map = dynamic(() => import("../components/Map"), {
-    loading: () => "Loading...",
-    ssr: false
-  });
+  // const Map = dynamic(() => import("../components/Map"), {
+  //   loading: () => "Loading...",
+  //   ssr: false
+  // });
 
   return (
     <>
