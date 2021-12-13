@@ -22,9 +22,9 @@ export default function Home({ colony }) {
           <link rel="icon" href="/favicon.ico" />
           <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
         </Head>
-      <div className="box-border w-screen object-contain relative flex flex-grow grid grid-rows-2 gap-2">
+      <div className="box-border w-screen object-contain relative">
         <Map colony={colony} />
-        <Info colony={colony} />
+        {/* <Info colony={colony} /> */}
 
       </div>
     </>
