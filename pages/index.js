@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import clientPromise from '../lib/mongodb';
+
 import geocodeAddress from '../lib/geocode';
 import Map from '../components/Map';
 import Info from '../components/Info';
 
 export default function Home({ colony }) {
 
-  // console.log({clients})
   console.log({colony})
 
   const Map = dynamic(() => import("../components/Map"), {
@@ -32,36 +31,15 @@ export default function Home({ colony }) {
 }
 
 export async function getServerSideProps(context) {
-  const client = await clientPromise
-  const db = client.db()
+  // call GET method to retrieve data
+  let res = await fetch("http://localhost:3000/api/endpoints", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });;
 
-  // setting variable data as collection
-  // const clientData = await db.collection("client").find().toArray();
-
-  // mapping over bson to json
-  // const clients = clientData.map(client => {
-  //   return{
-  //     firstName: client.firstName,
-  //     lastName: client.lastName,
-  //     email: client.email,
-  //     address: client.address,
-  //     status: client.clientType
-  //   }
-  // })
-
-  const colonyData = await db.collection("colony").find().toArray();
-  
-  const colony = colonyData.map(colony => {
-    return{
-      name: colony.name,
-      address: colony.address,
-      coordinates: colony.location.coordinates,
-      status: colony.status.code,
-      total: colony.status.total,
-      fixed: colony.status.fixed,
-      rescue: colony.status.to_rescue
-    }
-  })
+  let colony = await res.json();
 
   return {
     props: { colony },
