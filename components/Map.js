@@ -1,5 +1,11 @@
 import React from 'react';
-import ReactMapGl, {Popup, NavigationControl, GeolocateControl} from 'react-map-gl';
+import ReactMapGl, {
+    Popup,
+    NavigationControl,
+    GeolocateControl,
+    Source,
+    Layer
+} from 'react-map-gl';
 import Pin from './Pin';
 
 const Map = (props) => {
@@ -47,7 +53,7 @@ const Map = (props) => {
                 {...viewport}
                 {...settings}
             >
-                {props.colony.map((colony, index) => {
+                {props.colony.data.map((colony, index) => {
                     return <Pin colony={colony} key={index}/>
                     }
                 )}

@@ -9,7 +9,7 @@ const SIZE = 20;
 
 const Pin = ({colony}) => {
     return(
-        <Marker longitude={colony.coordinates[0]} latitude={colony.coordinates[1]}>
+        <Marker longitude={colony.location.coordinates[0]} latitude={colony.location.coordinates[1]}>
             <svg
                 height={SIZE}
                 viewBox="0 0 24 24"
