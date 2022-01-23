@@ -30,7 +30,20 @@ Carol House Quick Fix Pet Clinic (Saint Louis, MO) TNR (trap-neuter-release) map
 *TBD*
 
 ## Application Screenshots
-*TBD*
+**Mapbox with pins**:
+- this uses the Pin component of the react-map-gl framework *DATA QUANTITY EXCEEDS PERFORMANCE LEVEL OF PIN COMPONENT: THIS SCREENSHOT IS FOR VISUAL PURPOSES ONLY*
+
+![Mapbox-screenshot](./assets/screenshots/CHQF_map.png)
+
+**Add form:**
+- this is currently a navbar link to a seperate page with plans to use the same form as a pop-up when a new pin is dropped onto the map with the goal to improve efficiency and function
+
+![addform-screenshot](./assets/screenshots/CHQF_add.png)
+
+**About page:**
+- a simple about page with link to CHQF's website - the pink navbar link "C-HQ" is for the cloud based clinic management software CHQF uses to track individual animals and services
+
+![aboutpage-screenshot](./assets/screenshots/CHQF_about.png)
 
 ****
 
