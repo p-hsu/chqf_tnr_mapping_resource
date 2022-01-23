@@ -20,7 +20,9 @@ Carol House Quick Fix Pet Clinic (Saint Louis, MO) TNR (trap-neuter-release) map
 *ONGOING*
 
 #### Issues to debug:
-*ONGOING*
+- native mapbox vs react-map-gl
+- saving formatted geoJSON data to variable to use for addLayer
+- lacking any code testing
 
 ****
 
@@ -40,7 +42,7 @@ The following components are used to build the code for this project:
 1. Next.js
 2. Tailwind CSS
 3. Mapbox
-    - react-map-gl
+    - react-map-gl [?]
     - Mapbox Geocoding API
 4. MongoDB Atlas
 
@@ -48,10 +50,12 @@ The following components are used to build the code for this project:
 
 The following lists all functions within this project:
 
-* user can interact with map pins of colony locations to pull up general information
-* user can add clients, colonies, associated resources
-* user can edit and delete data as necessary
-* user can search by client or colony information [?]
+* user will be able to interact with map pins of colony locations to pull up general information
+* user will be able to add new colony data
+* user will be able to edit and delete colony data as necessary
+
+On deck
+* user will be able to search by client or colony information [?]
 
 ### Process:
 
