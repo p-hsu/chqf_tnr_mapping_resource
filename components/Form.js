@@ -19,8 +19,8 @@ const Form = () => {
                     <input type="text" placeholder="Street *" className="form-input"/>
                 </div>
                 <div className="form-div grid grid-cols-3 gap-2">
-                    <input type="text" className="form-input bg-white cursor-not-allowed" value="St. Louis"/>
-                    <input type="text" className="form-input bg-white cursor-not-allowed" value="Missouri"/>
+                    <input type="text" className="p-2 bg-indigo-100 border-2 border-indigo-900 rounded-md focus:outline-none flex-grow disabled:cursor-not-allowed" value="St. Louis" disabled/>
+                    <input type="text" className="p-2  bg-indigo-100 border-2 border-indigo-900 rounded-md  focus:outline-none flex-grow disabled:cursor-not-allowed" value="Missouri" disabled/>
                     <input type="text" placeholder="Zipcode *" className="form-input"/>
                 </div>
                 <div className="form-div h-14">
