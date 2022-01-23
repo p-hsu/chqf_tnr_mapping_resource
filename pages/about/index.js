@@ -1,14 +1,14 @@
 export default function About() {
   return (
-    <div className="box-border w-screen p-3 relative text-base leading-snug flex flex-grow">
-      <div className=" p-2 m-auto border-2 border-gray-700 border-opacity-50 rounded-md text-gray-100 bg-gradient-to-b from-gray-700 via-gray-500 to-gray-700 shadow-lg">
+    <div className="box-border mx-auto my-auto p-5 max-w-4xl max-h-screen relative text-base leading-snug flex flex-grow">
+      <div className=" p-5 m-auto border-2 border-gray-700 border-opacity-50 rounded-md text-gray-100 bg-gradient-to-b from-gray-700 via-gray-500 to-gray-700 shadow-lg">
       <p>
         This application serves as an internal tool for
         <a target="_blank" href="https://stlspayneuter.org/" className="border-b-2 border-pink-400 border-opacity-25 text-pink-400 font-medium"> Carol House Quick Fix </a>
-        (CHQF) Pet Clinic in Saint Louis, MO. As CHQF continues to their mission to decrease pet/animal population
-        in the city, the "Trap-Neuter-Release" Program has proved to be highly effective in controlling the feral
-        cat numbers. Working with the community is and has always been pivitol - be it feeders, transporters, or
-        other animal welfare organizations - the collaboration between all participants serves consistent progress
+        (CHQF) Pet Clinic in Saint Louis, MO. As CHQF continues to their mission to decrease pet and animal over-population
+        in the city, the "Trap-Neuter-Release" (TNR) Program has proved to be highly effective in controlling feral
+        cat numbers. Community collaboration is and has always been a pivitol part of this organization- our partnerships
+        with other TNR colony feeders, trappers, transporters and local animal welfare organizations contribute to our mission
         on a daily basis.
       </p>
       <br></br>
